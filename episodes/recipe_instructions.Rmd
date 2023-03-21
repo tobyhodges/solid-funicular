@@ -13,7 +13,7 @@ exercises: 2
 ::::::::::::::::::::::::::::::::::::: objectives
 
 - Be able to prduce a batch of delicious cinnamon rolls
-- Understand how to adjust proooofing time
+- Understand how to adjust proving time
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
