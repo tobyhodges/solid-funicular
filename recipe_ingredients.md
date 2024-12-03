@@ -28,7 +28,7 @@ There are 3 main components to this recipe: the main ingredients for the dough, 
 ### Dough Ingredients
 
 
-```r
+``` r
 main_ingredients <- tribble(
   ~ingredient, ~amount_imperial, ~amount_grams,
   "butter (cold)", "8 tablespoons", 113,
@@ -44,57 +44,18 @@ main_ingredients %>%
   kableExtra::kable(align = "r")
 ```
 
-<table>
- <thead>
-  <tr>
-   <th style="text-align:right;"> ingredient </th>
-   <th style="text-align:right;"> amount_imperial </th>
-   <th style="text-align:right;"> amount_grams </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:right;"> butter (cold) </td>
-   <td style="text-align:right;"> 8 tablespoons </td>
-   <td style="text-align:right;"> 113 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> all-purpose flour </td>
-   <td style="text-align:right;"> 2 ½ cups </td>
-   <td style="text-align:right;"> 300 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> sourdough starter discard </td>
-   <td style="text-align:right;"> ⅓ cup </td>
-   <td style="text-align:right;"> 100 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> buttermilk </td>
-   <td style="text-align:right;"> 1 cup </td>
-   <td style="text-align:right;"> 240 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> honey or granulated sugar </td>
-   <td style="text-align:right;"> 1 tbsp + 1 tsp </td>
-   <td style="text-align:right;"> 25 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> fine sea salt </td>
-   <td style="text-align:right;"> ¾ teaspoon </td>
-   <td style="text-align:right;"> 4 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> baking powder </td>
-   <td style="text-align:right;"> 1 tsp </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> baking soda </td>
-   <td style="text-align:right;"> ½ cup </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-</tbody>
-</table>
+
+
+|                ingredient| amount_imperial| amount_grams|
+|-------------------------:|---------------:|------------:|
+|             butter (cold)|   8 tablespoons|          113|
+|         all-purpose flour|        2 ½ cups|          300|
+| sourdough starter discard|           ⅓ cup|          100|
+|                buttermilk|           1 cup|          240|
+| honey or granulated sugar|  1 tbsp + 1 tsp|           25|
+|             fine sea salt|      ¾ teaspoon|            4|
+|             baking powder|           1 tsp|           NA|
+|               baking soda|           ½ cup|           NA|
 
 ::::::::::::::::::::::::::::: callout
 
@@ -109,7 +70,7 @@ In warmer climates, you may want to reduce the amount of buttermilk and/or incre
 ### Cinnamon-sugar filling
 
 
-```r
+``` r
 filling_ingredients <- tribble(
   ~ingredient, ~amount_imperial, ~amount_grams,
   "light brown sugar", "¾ cup", 150,
@@ -120,38 +81,19 @@ filling_ingredients %>%
   kableExtra::kable(align = "r")
 ```
 
-<table>
- <thead>
-  <tr>
-   <th style="text-align:right;"> ingredient </th>
-   <th style="text-align:right;"> amount_imperial </th>
-   <th style="text-align:right;"> amount_grams </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:right;"> light brown sugar </td>
-   <td style="text-align:right;"> ¾ cup </td>
-   <td style="text-align:right;"> 150 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> ground cinnamon </td>
-   <td style="text-align:right;"> 2 teaspoons </td>
-   <td style="text-align:right;"> NA </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> butter (melted) </td>
-   <td style="text-align:right;"> 4 tablespoons </td>
-   <td style="text-align:right;"> 56 </td>
-  </tr>
-</tbody>
-</table>
+
+
+|        ingredient| amount_imperial| amount_grams|
+|-----------------:|---------------:|------------:|
+| light brown sugar|           ¾ cup|          150|
+|   ground cinnamon|     2 teaspoons|           NA|
+|   butter (melted)|   4 tablespoons|           56|
 
 
 ### Glaze 
 
 
-```r
+``` r
 glaze_ingredients <- tribble(
   ~ingredient, ~amount_imperial, ~amount_grams,
   "powdered sugar", "1 cup", 120,
@@ -163,37 +105,14 @@ glaze_ingredients %>%
   kableExtra::kable(align = "r")
 ```
 
-<table>
- <thead>
-  <tr>
-   <th style="text-align:right;"> ingredient </th>
-   <th style="text-align:right;"> amount_imperial </th>
-   <th style="text-align:right;"> amount_grams </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:right;"> powdered sugar </td>
-   <td style="text-align:right;"> 1 cup </td>
-   <td style="text-align:right;"> 120 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> butter (melted) </td>
-   <td style="text-align:right;"> 1 tablespoon </td>
-   <td style="text-align:right;"> 14 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> vanilla extract </td>
-   <td style="text-align:right;"> 1 teaspoon </td>
-   <td style="text-align:right;"> 5 </td>
-  </tr>
-  <tr>
-   <td style="text-align:right;"> milk </td>
-   <td style="text-align:right;"> 2 tablespoons </td>
-   <td style="text-align:right;"> 30 </td>
-  </tr>
-</tbody>
-</table>
+
+
+|      ingredient| amount_imperial| amount_grams|
+|---------------:|---------------:|------------:|
+|  powdered sugar|           1 cup|          120|
+| butter (melted)|    1 tablespoon|           14|
+| vanilla extract|      1 teaspoon|            5|
+|            milk|   2 tablespoons|           30|
 
 ::::::::::::::::::::::::::::::::::::: instructor
 
@@ -209,14 +128,14 @@ Add a column to `main_ingredients` that has the amount in ounces (weight, not fl
 ::::::::::::::::::::::::::::::::::::: solution
 
 
-```r
+``` r
 main_ingredients <- main_ingredients %>% 
   mutate(amount_oz = amount_grams * 0.035274)
 
 main_ingredients
 ```
 
-```{.output}
+``` output
 # A tibble: 8 × 4
   ingredient                amount_imperial amount_grams amount_oz
   <chr>                     <chr>                  <dbl>     <dbl>
